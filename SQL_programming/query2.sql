@@ -8,5 +8,5 @@ JOIN event ON event.id = child_event.event_id
 WHERE fee = 0
 GROUP BY (child.first_name);
 
-CALL child_unpaid_event_fee();
+CALL child_events();
 COMMIT ;
